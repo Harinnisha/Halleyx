@@ -1,90 +1,176 @@
-# HalleyX Dashboard Builder
+🚀 HalleyX Dashboard Builder
 
-A modern, premium, and fully-featured dashboard builder platform that allows users to monitor their customer orders, revenue, and analytics in real-time. This project features a sophisticated drag-and-drop dashboard interface, secure authentication, and detailed order tracking.
+A modern, premium dashboard builder to track orders, revenue, and analytics in real-time.
 
----
+🌐 Live Demo
 
-## 🚀 Features
+🎥 Watch the full demo here:
+👉 https://youtu.be/S64vNzFzHtY
 
-- **🔐 Secure Authentication**: Full user login and registration powered by **Supabase Auth**.
-- **📊 Dynamic Dashboard Builder**:
-  - Drag-and-drop widgets using `react-grid-layout`.
-  - Resizable and customizable components.
-  - Responsive layouts for all screen sizes.
-- **📈 Advanced Analytics**:
-  - KPI cards for "at-a-glance" performance metrics.
-  - Interactive charts (Bar, Pie, Line, Area) for revenue distribution.
-- **🛒 Order Management**:
-  - Full CRUD functionality for customer orders.
-  - **Live Timeline Tracking**: Premium tracking modal (Placed -> Processing -> Shipped -> Delivered).
-- **☁️ Cloud Powered**: Fully migrated from MongoDB to **Supabase** for high-performance cloud storage and security.
+✨ Overview
 
----
+HalleyX Dashboard Builder is a powerful full-stack web application that allows users to:
 
-## 🛠️ Technology Stack
+Build customizable dashboards (drag & drop)
 
-| Part | Tech |
-| :--- | :--- |
-| **Frontend** | React, Vite, Tailwind CSS, Zustand |
-| **Backend** | Node.js, Express, Supabase SDK |
-| **Database** | PostgreSQL (Supabase) |
-| **Icons** | Lucide React |
-| **Charts** | Chart.js 4+ |
+Track customer orders in real-time
 
----
+Analyze business performance using charts
 
-## 📦 Getting Started
+Manage data securely using cloud backend
 
-### 1. Prerequisites
-- Node.js (v18+)
-- A [Supabase](https://supabase.com/) account.
+🔥 Key Features
+🔐 Authentication
 
-### 2. Database Setup (Supabase)
-1. Go to your **Supabase Dashboard** → **SQL Editor**.
-2. Run the provided schema script (find it in `docs/supabase_schema.sql` or use the one created during development) to create the `orders` table and enable RLS (Row Level Security).
+Secure login & signup using Supabase Auth
 
-### 3. Frontend Configuration
-Navigate to the `dashboard` directory:
-```bash
+Session management & protected routes
+
+📊 Dashboard Builder
+
+Drag-and-drop widgets (react-grid-layout)
+
+Fully responsive layouts
+
+Resize & customize components
+
+📈 Analytics
+
+KPI cards (Revenue, Orders, Growth)
+
+Charts:
+
+Bar Chart
+
+Pie Chart
+
+Line Chart
+
+Area Chart
+
+🛒 Order Management
+
+Full CRUD operations
+
+Real-time updates
+
+🧭 Timeline tracking:
+
+Placed → Processing → Shipped → Delivered
+
+☁️ Cloud Backend
+
+Powered by Supabase (PostgreSQL)
+
+High performance & scalability
+
+Secure Row Level Security (RLS)
+
+🧱 Tech Stack
+Layer	Technology
+Frontend	React, Vite, Tailwind CSS
+State	Zustand
+Backend	Node.js, Express
+Database	Supabase (PostgreSQL)
+Charts	Chart.js
+Icons	Lucide React
+📂 Project Structure
+HalleyX/
+│
+├── dashboard/        # Frontend (React)
+├── backend/          # Node.js API
+├── docs/             # SQL schema
+└── README.md
+⚙️ Setup Instructions
+🔹 1. Clone the Repository
+git clone https://github.com/your-username/halleyx-dashboard.git
+cd halleyx-dashboard
+🔹 2. Frontend Setup
 cd dashboard
 npm install
-```
-Create a `.env` file with your credentials:
-```env
+
+Create .env file:
+
 VITE_SUPABASE_URL=your_project_url
 VITE_SUPABASE_ANON_KEY=your_anon_key
-```
-Run the frontend:
-```bash
-npm run dev
-```
 
-### 4. Backend Configuration (Optional Proxy)
-Navigate to the `backend` directory:
-```bash
+Run:
+
+npm run dev
+🔹 3. Backend Setup
 cd backend
 npm install
-```
-Create a `.env` file:
-```env
+
+Create .env file:
+
 SUPABASE_URL=your_project_url
 SUPABASE_KEY=your_key
 PORT=5000
-```
-Run the backend:
-```bash
+
+Run:
+
 npm run dev
-```
+🔹 4. Database Setup
 
----
+Go to Supabase Dashboard → SQL Editor
 
-## 🔐 Security & Production
-- **Row Level Security (RLS)** is enabled on all tables. Users can only see and edit the data they created.
-- Sensitive environment variables are excluded from version control via `.gitignore`.
+Run your schema file:
 
----
+-- Example
+CREATE TABLE orders (
+  id UUID PRIMARY KEY,
+  user_id UUID,
+  status TEXT,
+  created_at TIMESTAMP
+);
 
-## 📄 License
-This project is for demonstration and UX design purposes.
+Enable Row Level Security (RLS)
 
-&copy; 2026 **HalleyX**. All rights reserved.
+🔐 Security
+
+✅ Row Level Security (RLS)
+
+✅ User-specific data isolation
+
+✅ Environment variables protected
+
+💡 Future Improvements
+
+📱 Mobile app version
+
+🔔 Real-time notifications
+
+📦 Inventory management
+
+📊 AI-based analytics insights
+
+📸 Screenshots (Add yours here)
+![Dashboard Screenshot](./screenshots/dashboard.png)
+![Analytics Screenshot](./screenshots/analytics.png)
+🏆 Why This Project is Strong
+
+Full-stack (Frontend + Backend + Database)
+
+Real-world use case (orders + analytics)
+
+Modern tools (React + Supabase)
+
+Clean UI + advanced features
+
+👉 Perfect for:
+
+Resume
+
+Portfolio
+
+Interviews
+
+📄 License
+
+This project is for learning and demonstration purposes.
+
+© 2026 HalleyX
+
+🙌 Author
+
+Harinisha K
